@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    background-image: url('sumba.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.profile-container {
+    background-color: #fff200;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    max-width: 600px;
+    width: 100%;
+    
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+#savePhotoBtn {
+    background-color: #28a745;
+    margin-left: 10px;
+}
+
+#savePhotoBtn:hover {
+    background-color: #218838;
+}
+
+input[type="text"], input[type="email"] {
+    border: none;
+    background-color: #f4f4f4;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:disabled {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+#saveInfoBtn {
+    background-color: #28a745;
+    display: none;
+}
+
+#saveInfoBtn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .profile-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+.back-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: -10px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

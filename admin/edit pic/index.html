@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile Photo and Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="profile-container">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="profile-details">
+            <!-- Profile Picture Section -->
+            <div class="profile-pic">
+                <img id="profileImage" src="default-profile.png" alt="Profile Picture">
+                <input type="file" id="upload" style="display: none;" accept="image/*">
+                <button id="editPhotoBtn" onclick="triggerUpload()">Edit Photo</button>
+                <button id="savePhotoBtn" style="display: none;" onclick="savePhoto()">Save Photo</button>
+            </div>
+
+            <!-- User Details Section -->
+            <div class="user-info">
+                <p><strong>User:</strong> <input type="text" id="userName" value="W.P.S Waruna" disabled></p>
+                <p><strong>Email:</strong> <input type="email" id="userEmail" value="kbdjkdbsbd" disabled></p>
+                <p><strong>Mobile No:</strong> <input type="text" id="userMobile" value="1111111111" disabled></p>
+                <button id="editInfoBtn" onclick="editInfo()">Edit Info</button>
+                <button id="saveInfoBtn" style="display: none;" onclick="saveInfo()">Save Info</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

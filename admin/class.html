@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Classes</title>
+  <link rel="stylesheet" href="class.css">
+  <script defer src="class.js"></script>
+</head>
+<body>
+    <button id="back-button" onclick="window.history.back()">Back</button>
+  <div class="container">
+    <header>
+      <h1>Manage Classes</h1>
+    </header>
+
+    <main>
+      <!-- Form for adding/editing classes -->
+      <section class="class-form">
+        <h2>Add/Edit Class</h2>
+        <form id="classForm" enctype="multipart/form-data">
+          <input type="hidden" id="classId">
+          <label for="className">Class Name:</label>
+          <input type="text" id="className" required>
+          <label for="classDate">Class Date:</label>
+          <input type="date" id="classDate" required>
+          <label for="classTime">Class Time:</label>
+          <input type="time" id="classTime" required>
+          <label for="classZoomLink">Zoom Link:</label>
+          <input type="url" id="classZoomLink" required>
+          <label for="classPhoto">Class Photo:</label>
+          <input type="file" id="classPhoto" accept="image/png, image/jpeg" required>
+          <button type="submit">Save Class</button>
+        </form>
+      </section>
+
+      <!-- Section for displaying classes -->
+      <section class="class-list">
+        <h2>Classes</h2>
+        <ul id="classList">
+          <!-- Classes will be dynamically added here -->
+        </ul>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage News</title>
+  <link rel="stylesheet" href="news.css">
+  <script defer src="news.js"></script>
+</head>
+<body>
+    <button id="back-button" onclick="window.history.back()">Back</button>
+  <div class="container">
+    <header>
+      <h1>Manage News</h1>
+    </header>
+
+    <main>
+      <!-- Form for adding/editing News -->
+      <section class="class-form">
+        <h2>Add/Edit News</h2>
+        <form id="classForm" enctype="multipart/form-data">
+          <input type="hidden" id="classId">
+          <label for="className">News Name:</label>
+          <input type="text" id="className" required>
+          <label for="classPhoto">News Photo:</label>
+          <input type="file" id="classPhoto" accept="image/png, image/jpeg" required>
+          <button type="submit">Save News</button>
+        </form>
+      </section>
+
+      <!-- Section for displaying News -->
+      <section class="class-list">
+        <h2>News</h2>
+        <ul id="classList">
+          <!-- News will be dynamically added here -->
+        </ul>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

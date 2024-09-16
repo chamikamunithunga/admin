@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="user.css">
+  <script defer src="user.js"></script>
+</head>
+<body>
+
+  <div class="admin-panel">
+    <header>
+      <h1>Instructor Profile</h1>
+    </header>
+
+    <button id="back-button" onclick="window.history.back()">Back</button>
+
+    <!-- Logo Image -->
+    <div class="logo-container">
+      <img id="logo" src="gym copy.png" alt="Logo">
+    </div>
+    
+    <main>
+      <section class="user-profile">
+        <div class="profile-header">
+          <div class="profile-image">
+            <img id="profile-picture" src="user.jpg" alt="User Profile Picture">
+            <input type="file" id="profile-input" style="display: none;" accept="image/*">
+          </div>
+          <div class="profile-info">
+            <h2 id="username">Isuru Madushanka</h2>
+            <p>User ID: <span id="user-id">12345</span></p>
+          </div>
+        </div>
+
+        <!-- Personal Details -->
+        <div class="profile-details">
+          <h3>Profile Information</h3>
+
+          <div class="info-row">
+            <label for="address">Address:</label>
+            <input type="text" id="address" value="lorem ipsum ammata siri wela " disabled>
+          </div>
+          <div class="info-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="chamika@gmail.com" disabled>
+          </div>
+          <div class="info-row">
+            <label for="contact">Contact No:</label>
+            <input type="text" id="contact" value="125469873" disabled>
+          </div>
+        </div>
+
+        <!-- Bank Details Section -->
+        <div class="bank-details">
+          <h3>Bank Information</h3>
+
+          <div class="info-row">
+            <label for="bank-name">Bank Name:</label>
+            <input type="text" id="bank-name" value="Bank of ranil" disabled>
+          </div>
+          <div class="info-row">
+            <label for="account-number">Account Number:</label>
+            <input type="text" id="account-number" value="123456789" disabled>
+          </div>
+          <div class="info-row">
+            <label for="routing-number">Routing Number:</label>
+            <input type="text" id="routing-number" value="987654321" disabled>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <button id="edit-profile">Edit Profile</button>
+          <button id="save-profile" style="display: none;">Save Profile</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

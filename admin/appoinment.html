@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Flatpickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<!-- Include Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <title>Appointment</title>
+  <link rel="stylesheet" href="appoinment.css">
+  <script defer src="appoinment.js"></script>
+</head>
+<body>
+
+  <div class="dashboard">
+    <header>
+      <h1>Appoinment</h1>
+    </header>
+    <button id="back-button" onclick="window.history.back()">Back</button>
+    
+    <main>
+      <!-- Appointments Section -->
+      <section class="appointments">
+        <h2>Appointments</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Appointment ID</th>
+              <th> Client ID</th>
+              <th> Payment Status </th>
+              <th>View Client Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>123</td>
+              <td>Payed</td>
+              <td><button onclick="toggleClientDetails('001')">View</button></td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Client Details Section -->
+      <section class="client-details">
+        <h2>Client Details</h2>
+        <div id="client-info" style="display: none;">
+          <!-- Client details will be populated here -->
+        </div>  
+      </section>
+
+
+       
+
+
+
+      
+
+     
+<!-- Calendar Section -->
+<section class="calendar">
+    <h2>Calendar</h2>
+    <input id="calendar" type="text"> <!-- Changed to input for Flatpickr -->
+    <button id="save-date-time">Mark/Update Date</button>
+    <ul id="reserved-dates-list"></ul> <!-- List to display reserved dates -->
+  </section>
+  
+
+
+
+  
+      
+
+      <!-- Payment Slips Section -->
+      <section class="payment-slips">
+        <h2>Client Payment Slips</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Client ID</th>
+              <th>Payment Amount</th>
+              <th>Payment Date</th>
+              <th>Payment Status</th>
+              <th>Actions</th>
+              
+              
+            </tr>
+          </thead>
+          <tbody id="payment-slip-table">
+            <!-- Payment slip details will be populated here dynamically -->
+          </tbody>
+        </table>
+      </section>
+      
+    </main>
+  </div>
+
+</body>
+</html>

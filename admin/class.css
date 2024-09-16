@@ -1,0 +1,134 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(clz.jpg);
+    
+  }
+
+  #back-button {
+    background-color: #0088ff ;
+    color: #000000;             
+    border: none;              
+    border-radius: 5px;       
+    padding: 10px 30px;        
+    font-size: 16px;           
+    cursor: pointer;           
+    transition: background-color 0.3s ease; 
+    margin-bottom: 40px;       
+    margin-top: 40px;   
+    margin-left: 50px;      
+  }
+  
+  
+  
+  #back-button:hover {
+    background-color: #ffe600; 
+  }
+  
+  
+  #back-button:focus {
+    outline: 2px solid #b3a700; 
+    outline-offset: 2px;        
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffdd00;
+    font-size: larger;
+  }
+  
+  .class-form, .class-list {
+    background-color: #fff200bc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #e109091a;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"],
+  input[type="url"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #9a810500;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .class-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .class-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .class-list img {
+    max-width: 100px;
+    max-height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .class-list a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .class-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .class-form,
+    .class-list {
+      padding: 15px;
+    }
+  
+    button {
+      padding: 8px;
+    }
+  
+    .class-list img {
+      max-width: 80px;
+      max-height: 60px;
+    }
+  }
+  
